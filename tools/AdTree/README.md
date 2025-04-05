@@ -1,19 +1,7 @@
-<p align="right">
-    <b> <img src="https://img.shields.io/badge/Supported%20Platforms-Windows%20%7C%20macOS%20%7C%20Linux-green" title="Supported Platforms"/> </b> <br>
-    <b> <img src="https://img.shields.io/badge/license-GPL-blue" title="license-GPL"/> </b> <br> <br>
-</p>
+# Modified AdTree Compilation Guide
 
-
-AdTree implements the tree reconstruction method described in the following [paper](https://3d.bk.tudelft.nl/liangliang/publications/2019/adtree/AdTree_RS-2019.pdf):
-```
-Shenglan Du, Roderik Lindenbergh, Hugo Ledoux, Jantien Stoter, and Liangliang Nan.
-AdTree: Accurate, Detailed, and Automatic Modelling of Laser-Scanned Trees.
-Remote Sensing. 2019, 11(18), 2074.
-```
-
-<img src="./resources/images/AdTree.jpg" width="800">
-<p align="center">3D tree models reconstructed from point clouds</p>
-
+​**​Important Notice​**​:  
+The original AdTree implementation cannot retrieve face counts. You must use this modified version to enable mesh face counting functionality.
 ### Build and Run AdTree
 Prebuilt executables (for **macOS**, **Linux**, and **Windows**) can be downloaded 
 [here](https://github.com/tudelft3d/adtree/releases). 
@@ -61,59 +49,8 @@ of AdTree. Then you should have obtained a usable project and just build. I reco
 
 Don't have any experience with C/C++ programming? Have a look at [How to build AdTree step by step](./How_to_build.md).
 
-After obtaining the executable, AdTree can be run in three modes, which can be selected based 
-on arguments.
-  - GUI mode. It provides a user interface with menus. You can double-click the app or run it from the commandline
-    ```
-    ./AdTree
-    ```
-    
-  - Commandline single processing mode (i.e., processing a single point cloud file).
-    ```
-    ./AdTree  <xyz_file_path>  <output_directory>  [-s|-skeleton]
-    ```
-    - `<xyz_file_path>`: a mandatory argument specifying the path to the input point cloud file
-    - `<output_directory>`: a mandatory argument specifying where to save the results
-    - `[-s]` or `[-skeleton]`: also export the skeletons (omit this argument it if you don't need skeletons)
-
-  - Commandline batch processing mode (i.e., all *.xyz files in an input directory will be processed).
-    ```
-    ./AdTree  <xyz_files_directory>  <output_directory>  [-s|-skeleton]
-    ```
-     - `<xyz_files_directory>`: a mandatory argument specifying the directory containing the input point cloud files
-     - `<output_directory>`: a mandatory argument specifying where to save the results
-     - `[-s]` or `[-skeleton]`: also export the skeletons (omit this argument it if you don't need skeletons)
-
-<p align="center"> 
-     <img src="./resources/images/ui.jpg" width="600"> 
-</p>
- 
-
----
-
-### Data
-Some test tree point clouds are provided in the '[data](./data)' folder.
-
-**Note:** When testing on your point clouds, please make sure that:
- - your point cloud represents a single tree (i.e., the tree is segmented out from the background; no ground, no fence...);
- - the tree has an upright orientation (i.e., with Z-axis pointing up).
-
----
-
-### About the output
-AdTree outputs 3D models of the reconstructed branches (and also leaves) as triangle meshes 
-in the [OBJ format](https://en.wikipedia.org/wiki/Wavefront_.obj_file).
-
-It also supports to output the reconstructed skeletons as generalized cylinders (i.e., the two endpoints of an edge have
-different radii) in the [PLY format](https://en.wikipedia.org/wiki/PLY_(file_format)). In this format, each branch is 
-represented by a sequence of generalized cylinders, and each vertex is associated with a `radius' property. Please note 
-that most tools (like CloudCompare and MeshLab) do not support this format. You can use [Mapple](https://github.com/LiangliangNan/Easy3D/releases/tag/v2.5.2) (or one of the example viewers in [Easy3D](https://github.com/LiangliangNan/Easy3D))
-to visualize the exported skeletons (see an example visualization [here](https://github.com/tudelft3d/AdTree/issues/16#issuecomment-1410001785)).
-
----
 
 ### Citation
-If you use the code/program (or part) of AdTree in scientific work, please cite our paper:
 
 ```bibtex
 @article{du2019adtree,
@@ -129,15 +66,4 @@ If you use the code/program (or part) of AdTree in scientific work, please cite 
 
 ---
 
-### License
-This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License or (at your option) any later version. The full text of the license can be found in the accompanying LICENSE file.
 
----
-
-Should you have any questions, comments, or suggestions, please contact us at liangliang.nan@tudelft.nl
-
-3D Geoinformation Research Group, TU Delft,
-
-https://3d.bk.tudelft.nl,
-
-Dec. 1, 2019
