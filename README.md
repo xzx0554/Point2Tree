@@ -1,12 +1,18 @@
-# Point2Tree
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+  <div>
+    <h1>Point2Tree</h1>   
+ <h3 style="color: #555; margin-top: -10px;">Parameter-free and Training-free Deep Learning for Crown Reconstruction</h3>
+  </div>
+  <div>
+    <img src="https://img.shields.io/badge/Supported%20Platforms-Linux-green" title="Supported Platforms"/>
+    <img src="https://img.shields.io/badge/license-MIT-blue" title="license-MIT"/>
+  </div>
+</div>
 
-![Tree Crown Point Cloud Example](https://github.com/xzx0554/Point2Tree/blob/main/doc/images/cover.png?raw=true)
+<img src="https://github.com/xzx0554/Point2Tree/blob/main/doc/images/cover.png?raw=true" 
+alt="Point2Tree Reconstruction Example" 
+style="width: 100%; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 
-A self-prior point cloud reconstruction model for:
-
-- Tree crown volume calculation
-- 3D reconstruction of tree crowns
-- Tree crown projection area calculation
 
 ## 1.Features
 
@@ -86,3 +92,41 @@ For optimal performance:
   <img src="https://github.com/xzx0554/Point2Tree/raw/main/doc/images/processing_time.png" width="500" style="max-height: 300px" alt="Processing Time"><br>
   <em>Point2Tree achieves 2× faster processing speed (35ms vs 70ms per iteration).</em>
 </p>
+
+## 5. Citation
+
+This work builds upon two foundational papers. We sincerely thank the authors for their outstanding contributions that made this research possible:
+
+### Point2Mesh Reference
+
+```bibtex
+@article{Hanocka2020p2m,
+  title     = {Point2Mesh: A Self-Prior for Deformable Meshes},
+  author    = {Hanocka, Rana and Metzer, Gal and Giryes, Raja and Cohen-Or, Daniel},
+  journal   = {ACM Transactions on Graphics},
+  volume    = {39},
+  number    = {4},
+  pages     = {Article 86},
+  year      = {2020},
+  doi       = {10.1145/3386569.3392415}
+}
+```
+
+### AdTree Reference
+
+```bibtex
+@article{du2019adtree,
+  title     = {AdTree: Accurate, Detailed, and Automatic Modelling of Laser-Scanned Trees},
+  author    = {Du, Shenglan and Lindenbergh, Roderik and Ledoux, Hugo and Stoter, Jantien and Nan, Liangliang},
+  journal   = {Remote Sensing},
+  volume    = {11},
+  number    = {18},
+  pages     = {2074},
+  year      = {2019},
+  doi       = {10.3390/rs11182074}
+}
+```
+
+```
+
+```
