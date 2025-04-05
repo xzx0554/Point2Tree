@@ -1,18 +1,17 @@
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
   <div>
     <h1>Point2Tree</h1>   
- <h3 style="color: #555; margin-top: -10px;">Parameter-free and Training-free Deep Learning for Crown Reconstruction</h3>
   </div>
   <div>
     <img src="https://img.shields.io/badge/Supported%20Platforms-Linux-green" title="Supported Platforms"/>
     <img src="https://img.shields.io/badge/license-MIT-blue" title="license-MIT"/>
   </div>
 </div>
+ <h3 style="color: #555; margin-top: -10px;">Parameter-free and Training-free Deep Learning for Crown Reconstruction</h3>
 
 <img src="https://github.com/xzx0554/Point2Tree/blob/main/doc/images/cover.png?raw=true" 
 alt="Point2Tree Reconstruction Example" 
 style="width: 100%; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-
 
 ## 1.Features
 
@@ -130,3 +129,5 @@ This work builds upon two foundational papers. We sincerely thank the authors fo
 ```
 
 ```
+
+
