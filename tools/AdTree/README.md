@@ -1,5 +1,8 @@
 # Modified AdTree Compilation Guide
-
+<p align="right">
+    <b> <img src="https://img.shields.io/badge/Supported%20Platforms-Windows%20%7C%20macOS%20%7C%20Linux-green" title="Supported Platforms"/> </b> <br>
+    <b> <img src="https://img.shields.io/badge/license-GPL-blue" title="license-GPL"/> </b> <br> <br>
+</p>
 ​**​Important Notice​**​:  
 The original AdTree implementation cannot retrieve face counts. You must use this modified version to enable mesh face counting functionality.
 ### Build and Run AdTree
