@@ -48,9 +48,9 @@ Run `convex_hull_batch.py` after:
 ### Step 4: Simulation Execution
 
 Run `simulate.py` with these configurable options:
-• Multi-threading support: Set the number of parallel processes per device
-• Multi-GPU support: Configure the number of GPUs to utilize
-• Progress notifications: Enable and configure notification settings as needed
+- ​**​Multi-threading support​**​: Set the number of parallel processes per device  
+- ​**​Multi-GPU support​**​: Configure the number of GPUs to utilize  
+- ​**​Progress notifications​**​: Enable and configure notification settings as needed  
 
 For optimal performance:
 
@@ -83,13 +83,13 @@ For optimal performance:
 <p align="left">
   <strong>I. GPU Memory Usage Comparison</strong><br>
   <img src="https://github.com/xzx0554/Point2Tree/raw/main/doc/images/gpu_usage.png" width="500" style="max-height: 300px" alt="GPU Memory Comparison"><br>
-  <em>Point2Tree reduces GPU memory consumption by 50% compared to Point2Mesh (4.2GB vs 8.5GB).</em>
+  <em>Point2Tree reduces GPU memory consumption by 50% compared to Point2Mesh .</em>
 </p>
 
 <p align="left">
   <strong>II. Processing Time Comparison</strong><br>
   <img src="https://github.com/xzx0554/Point2Tree/raw/main/doc/images/processing_time.png" width="500" style="max-height: 300px" alt="Processing Time"><br>
-  <em>Point2Tree achieves 2× faster processing speed (35ms vs 70ms per iteration).</em>
+  <em>Point2Tree achieves 2× faster processing speed .</em>
 </p>
 
 ## 5. Citation
