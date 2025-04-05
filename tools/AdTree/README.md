@@ -1,10 +1,13 @@
 # Modified AdTree Compilation Guide
+
 <p align="right">
-    <b> <img src="https://img.shields.io/badge/Supported%20Platforms-Windows%20%7C%20macOS%20%7C%20Linux-green" title="Supported Platforms"/> </b> <br>
+    <b> <img src="https://img.shields.io/badge/Supported%20Platforms-Linux-green" title="Supported Platforms"/> </b> <br>
     <b> <img src="https://img.shields.io/badge/license-GPL-blue" title="license-GPL"/> </b> <br> <br>
 </p>
 ​**​Important Notice​**​:  
 The original AdTree implementation cannot retrieve face counts. You must use this modified version to enable mesh face counting functionality.
+<img src="./resources/images/AdTree.jpg" width="800">
+<p align="center">3D tree models reconstructed from point clouds</p>
 ### Build and Run AdTree
 Prebuilt executables (for **macOS**, **Linux**, and **Windows**) can be downloaded 
 [here](https://github.com/tudelft3d/adtree/releases). 
