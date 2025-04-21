@@ -248,28 +248,28 @@ class Segformer(nn.Module):
         # patch_embed
         self.patch_embed1 = OverlapPatchEmbed(
             img_size=img_size, 
-            patch_size=32, 
+            patch_size=7, 
             stride=4, 
             in_chans=in_chans,
             embed_dim=embed_dims[0]
         )
         self.patch_embed2 = OverlapPatchEmbed(
             img_size=img_size // 4, 
-            patch_size=16, 
+            patch_size=3, 
             stride=2, 
             in_chans=embed_dims[0],
             embed_dim=embed_dims[1]
         )
         self.patch_embed3 = OverlapPatchEmbed(
             img_size=img_size // 8, 
-            patch_size=16, 
+            patch_size=3, 
             stride=2, 
             in_chans=embed_dims[1],
             embed_dim=embed_dims[2]
         )
         self.patch_embed4 = OverlapPatchEmbed(
             img_size=img_size // 16, 
-            patch_size=16, 
+            patch_size=3, 
             stride=2, 
             in_chans=embed_dims[2],
             embed_dim=embed_dims[3]
