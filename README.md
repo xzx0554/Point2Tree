@@ -1,6 +1,6 @@
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
   <div>
-    <h1>Point2Tree</h1>   
+    <h1>Qmesh4point</h1>   
   </div>
   <div>
     <img src="https://img.shields.io/badge/Supported%20Platforms-Linux-green" title="Supported Platforms"/>
