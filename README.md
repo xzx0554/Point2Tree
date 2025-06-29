@@ -95,7 +95,15 @@ For optimal performance:
 ## 5. Citation
 
 This work builds upon two foundational papers. We sincerely thank the authors for their outstanding contributions that made this research possible:
+### Qmesh4point Reference
 
+```bibtex
+@article{,
+  title     = {QMesh4Point: Using Segformer and Self-Prior Learning to Calculate High-Precision Crown Volume and Projection Area Based on LiDAR Point Cloud Measurements},
+  author    = {Zhong Wang,Zhixiang Xu,Ruishan Geng,Jiaxin Zhong Shan Yang},
+  year      = {2025},
+}
+```
 ### Point2Mesh Reference
 
 ```bibtex
